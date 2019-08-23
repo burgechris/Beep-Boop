@@ -21,12 +21,11 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ## Specs
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| If a word begins with a non-alpha character | 10 | 10 |
-| Add 'ay' to one-letter words beginning with a vowel | i | i-yay |
-| Treat words beginning with 'y' as a consonant | you | you |
-| Multi-letter words that begin with a vowel | ant | ant-yay |
-| Multi-letter words that begin with one or more consonants, move first letter to the end and add '-ay' | cat | at-cay |
-| Words that begin with 'qu', move 'qu' to the end and add 'ay' | quit | uitqu-ay |
+| The program returns a range of numbers from 0 to the users inputted number | '4' | '0,1,2,3,4' |
+| The program returns an exception if the user inputted number contains a '1' | '1' | 'Beep!' |
+| The program returns an exception if the user inputted number contains a '2' | '2'| 'Boop!' |
+| The program returns an exception if the user inputted number contains a '3' | '3' | 'I'm sorry, Dave. I'm afraid I can't do that.' |
+| The first exception should apply, unless the second one does, and the same with the second and third | '13' | 'I'm sorry, Dave. I'm afraid I can't do that.' |
 
 
 ## Known Bugs

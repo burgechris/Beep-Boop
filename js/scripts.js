@@ -3,7 +3,18 @@
 $(document).ready(function() {
   $('#numberChecker').submit(function(event) {
     event.preventDefault();
-    var userNumber = parseInt($('input#random').val());
-    
+    var userNumber = $('input#random').val();
+
+    for(var i = 0; i <= userNumber; i += 1) {
+      if (userNumber[i] === '1') {
+        return 'beep';
+        console.log('beep');
+      }
+    }
   });
 });
+
+//Business Logic
+
+function outputNumber(userNumber) {
+}
