@@ -4,22 +4,23 @@ $(document).ready(function() {
   $('#numberChecker').submit(function(event) {
     event.preventDefault();
     var userInput = $('input#random').val();
-    var numberVersion = parseInt(userInput);
-    var newString = '';
+    var output = '';
+    var numberString = '';
 
     if (userInput.includes('3')) {
-      return "I'm sorry, Dave. I'm afraid I can't do that."
+      output =  "I'm sorry, Dave. I'm afraid I can't do that."
     } else if (userInput.includes('2')) {
-      return 'Boop!';
+      output = 'Boop!';
     } else if (userInput.includes('1')) {
-      return 'Beep!';
+      output = 'Beep!';
+    } else {
+      for (var i = 0; i <= parseInt(userInput); i++) {
+        numberString += i;
+        var output = numberString.split('');
+      }
     }
 
-    for (var i = 0; i <= numberVersion; i++) {
-      newString += i;
-    }
-
-    $('#output').text(newString);
+    $('#output').text(output);
 
   });
 });
