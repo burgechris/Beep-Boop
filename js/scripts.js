@@ -5,7 +5,6 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = $('#random').val();
     var display = result(userInput);
-
     $('#output').text(display);
 
   });
@@ -21,10 +20,11 @@ function result(userInput) {
   } else if (userInput.includes('1')) {
     return 'Beep!';
   }
+  var numberVersion = parseInt(userInput);
+  var numbers = '';
+  for (var i = 0; i <= numberVersion; i++) {
+    numbers += (i + ', ');
+  }
 
-    for (var i = 0; i <= parseInt(userInput); i++) {
-      output += (',') + i;
-    }
-
-  return output;
+  return numbers;
 };
