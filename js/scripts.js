@@ -7,6 +7,13 @@ $(document).ready(function() {
     var display = result(userInput);
     $('#output').text(display);
 
+    if (parseInt(userInput).includes()) {
+      return true;
+    }
+    else {
+      alert('Enter a number, fool.')
+    }
+
   });
 });
 
