@@ -3,22 +3,24 @@
 $(document).ready(function() {
   $('#numberChecker').submit(function(event) {
     event.preventDefault();
-    var userNumber = $('input#random').val();
+    var userInput = $('input#random').val();
+    var numberVersion = parseInt(userInput);
+    var newString = '';
 
-    // var range = function(start_num, end_num) {
-    //
-    // }
-
-    for(var i = 0; i <= userNumber; i += 1) {
-      if (userNumber.includes('3')){
-        var output = "I'm sorry, Dave. I'm afraid I can't do that."
-      } else if (userNumber.includes('2')) {
-        var output = 'Boop!';
-      } else if (userNumber.includes('1')) {
-        var output = 'Beep!';
-      }
+    if (userInput.includes('3')) {
+      return "I'm sorry, Dave. I'm afraid I can't do that."
+    } else if (userInput.includes('2')) {
+      return 'Boop!';
+    } else if (userInput.includes('1')) {
+      return 'Beep!';
     }
-    $('#output').text(output);
+
+    for (var i = 0; i <= numberVersion; i++) {
+      newString += i;
+    }
+
+    $('#output').text(newString);
+
   });
 });
 
