@@ -7,7 +7,6 @@ $(document).ready(function() {
     var display = result(userInput);
     console.log(display);
     var output = '';
-    var numberString = '';
 
     function result(userInput) {
       if (userInput.includes('3')) {
@@ -19,7 +18,7 @@ $(document).ready(function() {
       } else {
         for (var i = 0; i <= parseInt(userInput); i++) {
           output += i;
-
+          return output;
         }
       }
     };
