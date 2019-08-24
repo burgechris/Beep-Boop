@@ -14,21 +14,21 @@ $(document).ready(function() {
 //Business Logic
 
 function boopiedoopie(userInput) {
-  var numbers = '';
+  var integersArray = [];
   for (var i = 0; i <= userInput; i++) {
-    numbers += (i + ', ');
+    integersArray.push([i]);
   }
 
-  for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i].includes('3')) {
-      numbers.replace([i], "I'm sorry, Dave. I'm afraid I can't do that.");
-      console.log(numbers);
-    } else if (numbers[i].includes(2)) {
-      numbers[i] = 'Boop!';
-    } else if (numbers[i].includes(1)) {
-      numbers[i] = 'Beep!';
+  for (var i = 0; i < integersArray.length; i++) {
+    if (integersArray[i].toString().includes(3)) {
+      integersArray[i] = ("I'm sorry, Dave. I'm afraid I can't do that.");
+      console.log(integersArray);
+    } else if (integersArray[i].toString().includes(2)) {
+      integersArray[i] = 'Boop!';
+    } else if (integersArray[i].toString().includes(1)) {
+      integersArray[i] = 'Beep!';
     }
   }
 
-  return numbers;
+  return integersArray;
 };
