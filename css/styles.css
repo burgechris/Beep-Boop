@@ -3,5 +3,14 @@ body {
 }
 
 .jumbotron {
-  background-color: #8892a5;
+  background-color: #8eace6;
+}
+
+button {
+  background-color: #8eace6;
+  border-radius: 5px;
+}
+
+input {
+  background-color: #bdbcbc;
 }

@@ -6,7 +6,7 @@ $(document).ready(function() {
     var userInput = parseInt($('#random').val());
     var poopie = boopiedoopie(userInput);
 
-    var showMe = poopie.join(', ')
+    var showMe = poopie.join(', ');
 
     $('#output').text(showMe);
 
