@@ -20,18 +20,16 @@ function boopiedoopie(userInput) {
   var integersArray = [];
   for (var i = 0; i <= userInput; i++) {
     integersArray.push([i]);
+      if (integersArray[i].toString().includes(3)) {
+        integersArray[i] = ("I'm sorry, Dave. I'm afraid I can't do that.");
+        console.log(integersArray);
+      } else if (integersArray[i].toString().includes(2)) {
+        integersArray[i] = 'Boop!';
+      } else if (integersArray[i].toString().includes(1)) {
+        integersArray[i] = 'Beep!';
+      }
   }
-  // A second for loop to replace the exceptions, as well as turning the array to a string.
-  for (var i = 0; i < integersArray.length; i++) {
-    if (integersArray[i].toString().includes(3)) {
-      integersArray[i] = ("I'm sorry, Dave. I'm afraid I can't do that.");
-      console.log(integersArray);
-    } else if (integersArray[i].toString().includes(2)) {
-      integersArray[i] = 'Boop!';
-    } else if (integersArray[i].toString().includes(1)) {
-      integersArray[i] = 'Beep!';
-    }
-  }
+
 
   return integersArray;
 };

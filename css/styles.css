@@ -1,16 +1,7 @@
-body {
-  background-color: #8aa28c;
-}
-
-.jumbotron {
-  background-color: #8eace6;
-}
-
-button {
-  background-color: #8eace6;
-  border-radius: 5px;
-}
-
 input {
   background-color: #bdbcbc;
+}
+
+h2 {
+  font-size: 60px;
 }
